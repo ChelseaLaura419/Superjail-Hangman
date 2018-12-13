@@ -52,6 +52,8 @@ h2 {
 #current-word-text {
     color: #FF9933;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 #guesses-text {
@@ -67,4 +69,8 @@ h2 {
 h5 {
     text-align: center;
     color: #00CCCB;
+}
+
+h3 {
+    padding: 2px;
 }

@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var currentWordHolder = document.getElementById("current-word-holder");
 
 
-    var computerChoices = ["warden", "alice", "mistress", "the twins", "jared", "hunter", "combaticus", "stingray", "prisoners"];
+    var computerChoices = ["warden", "alice", "mistress", "twins", "jared", "hunter", "combaticus", "stingray", "prisoners"];
 
     var currentWord = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
@@ -26,15 +26,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
         var newDiv = document.createElement("div");
         currentWordText.appendChild(newDiv);
 
-        var newLetter = document.createElement("p");
+        var newLetter = document.createElement("h3");
         newLetter.textContent = currentWord[i];
         newLetter.hidden = "hidden";
         wordLettersArray.push(newLetter);
         newDiv.appendChild(newLetter);
 
-        var newLetterUnderscore = document.createElement("p");
+        var newLetterUnderscore = document.createElement("h3");
         if(currentWord[i] != " ")
-            newLetterUnderscore.textContent = "_";
+            newLetterUnderscore.textContent = "_ ";
         else 
             newLetterUnderscore.textContent = " ";
         newDiv.appendChild(newLetterUnderscore);
