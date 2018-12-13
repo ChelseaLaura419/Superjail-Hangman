@@ -49,6 +49,11 @@ h2 {
     text-align: center;
 }
 
+#current-word-text {
+    color: #FF9933;
+    text-align: center;
+}
+
 #guesses-text {
     color: #FEE968;
     text-align: center;
